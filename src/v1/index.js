@@ -1,7 +1,6 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const { buildSchema } = require('graphql');
-const { env } = require('c0nfig');
 
 module.exports = function v1 () {
   const router = express.Router();
@@ -19,7 +18,7 @@ module.exports = function v1 () {
   router.use('/graphql', graphqlHTTP({
     rootValue,
     schema,
-    graphiql: env === 'development',
+    graphiql: true,
   }));
 
   return router;
