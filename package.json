@@ -1,0 +1,53 @@
+{
+  "name": "american-animation-graphql-api",
+  "version": "1.0.0",
+  "description": "GraphQL API for Golden Age of American Animation",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./bin/runServer",
+    "dev": "nodemon -w ./src ./bin/runServer -e js,json",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voronianski/american-animation-graphql-api.git"
+  },
+  "keywords": [
+    "graphql",
+    "api",
+    "express"
+  ],
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.5.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voronianski/american-animation-graphql-api/issues"
+  },
+  "homepage": "https://github.com/voronianski/american-animation-graphql-api#readme",
+  "dependencies": {
+    "c0nfig": "^1.0.6",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "husky": "^1.2.0",
+    "nodemon": "^1.18.7",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0"
+  }
+}
