@@ -2,7 +2,7 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const { buildSchema } = require('graphql');
 
-module.exports = function v1 () {
+module.exports = function graphql () {
   const router = express.Router();
   const schema = buildSchema(`
     type Query {
@@ -15,7 +15,7 @@ module.exports = function v1 () {
     },
   };
 
-  router.use('/graphql', graphqlHTTP({
+  router.use('/', graphqlHTTP({
     rootValue,
     schema,
     graphiql: true,
