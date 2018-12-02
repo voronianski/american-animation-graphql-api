@@ -1,5 +1,4 @@
 const http = require('http');
-const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const logger = require('morgan');
@@ -20,7 +19,7 @@ app.use(compression());
 app.use('/ping', (req, res) => res.send('pong ^.^'));
 app.use('/graphql', graphql());
 
-function start () {
+function start() {
   http.createServer(app).listen(port, () => {
     console.log(`server is listening on http://localhost:${port} env=${env}`);
   });
