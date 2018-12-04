@@ -18,4 +18,4 @@ function init(app) {
   return apolloServer;
 }
 
-module.exports = { init };
+module.exports = { init, schema };
