@@ -36,16 +36,20 @@
   },
   "homepage": "https://github.com/voronianski/american-animation-graphql-api#readme",
   "dependencies": {
+    "apollo-server-express": "^2.2.5",
+    "async": "^2.6.1",
     "c0nfig": "^1.0.6",
     "compression": "^1.7.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "express-graphql": "^0.7.1",
     "graphql": "^14.0.2",
+    "klaw-sync": "^6.0.0",
     "lodash-id": "^0.14.0",
     "lowdb": "^1.0.0",
+    "merge-graphql-schemas": "^1.5.8",
     "morgan": "^1.9.1",
-    "shortid": "^2.2.14"
+    "shortid": "^2.2.14",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "husky": "^1.2.0",

@@ -5,6 +5,7 @@ const logger = require('morgan');
 const compression = require('compression');
 const { port, env } = require('c0nfig');
 
+const db = require('./db');
 const graphql = require('./graphql');
 
 const app = express();
@@ -17,12 +18,19 @@ app.disable('x-powered-by');
 app.use(cors());
 app.use(compression());
 app.use('/ping', (req, res) => res.send('pong ^.^'));
-app.use('/graphql', graphql());
 
 function start() {
-  http.createServer(app).listen(port, () => {
-    console.log(`server is listening on http://localhost:${port} env=${env}`);
-  });
+  db.init()
+    .then(_db => {
+      graphql.init(app);
+
+      http.createServer(app).listen(port, () => {
+        console.log(`started on http://localhost:${port} env=${env}`);
+      });
+    })
+    .catch(err => {
+      console.log(`failed to start server env=${env}`, err);
+    });
 }
 
 module.exports = {
