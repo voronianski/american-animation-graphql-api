@@ -21,7 +21,7 @@ app.use('/ping', (req, res) => res.send('pong ^.^'));
 
 function start() {
   db.init()
-    .then(_db => {
+    .then(() => {
       graphql.init(app);
 
       http.createServer(app).listen(port, () => {
