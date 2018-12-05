@@ -6,6 +6,7 @@ function init(app) {
   const apolloServer = new ApolloServer({
     typeDefs: schema.types,
     resolvers: schema.resolvers,
+    introspection: true,
     playground: true,
     tracing: true
   });
