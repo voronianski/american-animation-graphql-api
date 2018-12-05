@@ -1,6 +1,7 @@
 const path = require('path');
 const YAML = require('yamljs');
 const klawSync = require('klaw-sync');
+const shortid = require('shortid');
 
 function findDataFiles(dirPath) {
   return klawSync(dirPath, {
@@ -30,8 +31,43 @@ function parseDataFiles(fpaths = []) {
 }
 
 function transformData(data = {}) {
-  // TO DO:
-  // add shortids and maybe name slugs
+  // populate all items with ids
+  const addId = (obj = {}) => (obj.id = shortid.generate());
+
+  Object.keys(data).forEach(collectionName => {
+    const collectionData = data[collectionName];
+
+    if (Array.isArray(collectionData)) {
+      collectionData.forEach(addId);
+    } else {
+      addId(collectionData);
+    }
+  });
+
+  // create links between collections
+  Object.keys(data).forEach(collectionName => {
+    const collection = data[collectionName];
+
+    collection.forEach(collectionItem => {
+      Object.keys(collectionItem).forEach(collectionItemField => {
+        const relatedCollection = data[collectionItemField];
+
+        if (relatedCollection && relatedCollection.length) {
+          const linkedNames = collectionItem[collectionItemField];
+
+          linkedNames.forEach((linkedName, index) => {
+            const targetItem = relatedCollection.find(item => {
+              return item.name === linkedName;
+            });
+
+            if (targetItem) {
+              linkedNames.splice(index, 1, targetItem.id);
+            }
+          });
+        }
+      });
+    });
+  });
 
   return data;
 }

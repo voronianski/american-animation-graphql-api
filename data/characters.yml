@@ -1,3 +1,36 @@
+- name: Oswald the Lucky Rabbit
+  createdIn: 1927
+  studios:
+    - Walt Disney Productions
+    - M.J. Winkler Productions / Charles Mintz Studios
+    - Waltzer Lantz Productions
+
 - name: Mickey Mouse
+  createdIn: 1928
+  studios:
+    - Walt Disney Productions
+
+- name: Minnie Mouse
+  createdIn: 1928
+  studios:
+    - Walt Disney Productions
+
+- name: Pluto
+  createdIn: 1930
+  studios:
+    - Walt Disney Productions
+
+- name: Goofy
+  createdIn: 1932
+  studios:
+    - Walt Disney Productions
 
 - name: Donald Duck
+  createdIn: 1934
+  studios:
+    - Walt Disney Productions
+
+- name: Daisy Duck
+  createdIn: 1937
+  studios:
+    - Walt Disney Productions

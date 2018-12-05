@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node ./bin/runServer",
     "dev": "nodemon -w ./src ./bin/runServer -e js,json",
+    "clean": "rm .db.json",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {

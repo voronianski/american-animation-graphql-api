@@ -1,46 +1,73 @@
 - name: Walt Disney Productions
-  year: 1923
+  foundedIn: 1923
   wikiUrl: https://en.wikipedia.org/wiki/The_Walt_Disney_Company
+  characters:
+    - Oswald the Lucky Rabbit
+    - Mickey Mouse
+    - Minnie Mouse
+    - Pluto
+    - Goofy
+    - Donald Duck
+    - Daisy Duck
 
 - name: Fleischer Studios
-  year: 1921
+  foundedIn: 1921
+  defunctIn: 1942
   wikiUrl: https://en.wikipedia.org/wiki/Fleischer_Studios
 
 - name: Famous Studios
-  year: 1942
+  foundedIn: 1942
+  defunctIn: 1967
   wikiUrl: https://en.wikipedia.org/wiki/Famous_Studios
 
 - name: Warner Bros. Cartoons Inc.
-  year: 1933
+  foundedIn: 1933
+  defunctIn: 1969
   wikiUrl: https://en.wikipedia.org/wiki/Warner_Bros._Cartoons
 
 - name: Metro-Goldwyn-Mayer Cartoon Studio
-  year: 1937
+  foundedIn: 1937
+  defunctIn: 1957
   wikiUrl: https://en.wikipedia.org/wiki/Metro-Goldwyn-Mayer_cartoon_studio
 
-- name: Waltzer Lanz Productions
-  year: 1929
+- name: Waltzer Lantz Productions
+  foundedIn: 1929
+  defunctIn: 1972
   wikiUrl: https://en.wikipedia.org/wiki/Walter_Lantz_Productions
+  characters:
+    - Oswald the Lucky Rabbit
+
+- name: M.J. Winkler Productions / Charles Mintz Studios
+  foundedIn: 1921
+  defunctIn: 1940
+  characters:
+    - Oswald the Lucky Rabbit
 
 - name: Pat Sullivan Studio
-  year: 1915
+  foundedIn: 1915
+  defunctIn: 1928
 
 - name: Van Beuren Studios
-  year: 1921
+  foundedIn: 1921
+  defunctIn: 1937
   wikiUrl: https://en.wikipedia.org/wiki/Van_Beuren_Studios
 
 - name: Terrytoons
-  year: 1929
+  foundedIn: 1929
+  defunctIn: 1968
   wikiUrl: https://en.wikipedia.org/wiki/Terrytoons
 
 - name: Screen Gems
-  year: 1933
+  foundedIn: 1940
+  defunctIn: 1946
   wikiUrl: https://en.wikipedia.org/wiki/Screen_Gems
 
 - name: United Productions of America (UPA)
-  year: 1943
+  foundedIn: 1943
+  defunctIn: 2000
   wikiUrl: https://en.wikipedia.org/wiki/UPA_(animation_studio)
 
 - name: Hanna-Barbera Productions
-  year: 1957
+  foundedIn: 1957
+  defunctIn: 2001
   wikiUrl: https://en.wikipedia.org/wiki/Hanna-Barbera

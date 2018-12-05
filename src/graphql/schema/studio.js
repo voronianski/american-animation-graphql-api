@@ -1,30 +1,68 @@
-const types = `
+const { gql } = require('apollo-server-express');
+
+const studios = require('../../services/studios');
+const characters = require('../../services/characters');
+
+const types = gql`
   type Studio {
     id: ID!
 
     """
-    Official name of the studio
+    Official name of the studio that was used during the Golden Age period
     """
     name: String!
-    year: Int!
+
+    """
+    Year when studio was founded
+    """
+    foundedIn: Int!
+
+    """
+    Year when studio stopped functioning
+    """
+    defunctIn: Int
+
+    """
+    Link to Wikipedia article about the studio
+    """
     wikiUrl: String
-    characters: [Character!]
+
+    """
+    List of characters produced by the studio
+    """
+    characters: [Character!]!
   }
 
   type Query {
-    allStudios: [Studio!]!
+    allStudios(name: String): [Studio!]!
     Studio(id: ID, name: String): Studio
   }
 `;
 
 const resolvers = {
   Query: {
-    allStudios() {
-      console.log(arguments);
+    allStudios(root, { name }) {
+      if (name) {
+        return studios.findByName(name);
+      }
+
+      return studios.getAll();
     },
 
-    Studio() {
-      console.log(arguments);
+    Studio(root, { id, name }) {
+      if (id) {
+        return studios.findOneById(id);
+      }
+
+      if (name) {
+        return studios.findOneByName(name);
+      }
+    }
+  },
+
+  Studio: {
+    characters(parent) {
+      return characters.findByStudioId(parent.id);
     }
   }
 };

@@ -9,6 +9,10 @@ lodashId.createId = () => shortid.generate();
 
 let dbInstance;
 
+function getInstance() {
+  return dbInstance;
+}
+
 function init() {
   const data = dataParser.read();
   const adapter = new FileAsync('.db.json');
@@ -18,13 +22,7 @@ function init() {
 
     db._.mixin(lodashId);
     db.defaults(data).write();
-
-    // db.get('studios').upsert({title: 'Test!'}).write();
   });
 }
 
-function getInstance() {
-  return dbInstance;
-}
-
-module.exports = { init, getInstance };
+module.exports = { getInstance, init };
