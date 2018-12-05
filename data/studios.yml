@@ -14,11 +14,15 @@
   foundedIn: 1921
   defunctIn: 1942
   wikiUrl: https://en.wikipedia.org/wiki/Fleischer_Studios
+  characters:
+    - Popeye the Sailor
 
 - name: Famous Studios
   foundedIn: 1942
   defunctIn: 1967
   wikiUrl: https://en.wikipedia.org/wiki/Famous_Studios
+  characters:
+    - Popeye the Sailor
 
 - name: Warner Bros. Cartoons Inc.
   foundedIn: 1933

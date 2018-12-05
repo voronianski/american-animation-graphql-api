@@ -30,23 +30,32 @@ const types = gql`
     """
     List of characters produced by the studio
     """
-    characters: [Character!]!
+    characters(name: String, orderBy: CharacterOrderBy): [Character!]!
+  }
+
+  enum StudioOrderBy {
+    name_ASC
+    name_DESC
+    foundedIn_ASC
+    foundedIn_DESC
+    defunctIn_ASC
+    defunctIn_DESC
   }
 
   type Query {
-    allStudios(name: String): [Studio!]!
+    allStudios(name: String, orderBy: StudioOrderBy): [Studio!]!
     Studio(id: ID, name: String): Studio
   }
 `;
 
 const resolvers = {
   Query: {
-    allStudios(root, { name }) {
+    allStudios(root, { name, orderBy }) {
       if (name) {
-        return studios.findByName(name);
+        return studios.findByName(name, { orderBy });
       }
 
-      return studios.getAll();
+      return studios.getAll({ orderBy });
     },
 
     Studio(root, { id, name }) {
@@ -61,8 +70,8 @@ const resolvers = {
   },
 
   Studio: {
-    characters(parent) {
-      return characters.findByStudioId(parent.id);
+    characters({ id }, { name, orderBy }) {
+      return characters.findByStudioId(id, { name, orderBy });
     }
   }
 };

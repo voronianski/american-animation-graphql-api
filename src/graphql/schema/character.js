@@ -20,23 +20,30 @@ const types = gql`
     """
     List of studios that were maintaining rights to the character
     """
-    studios: [Studio!]!
+    studios(name: String, orderBy: StudioOrderBy): [Studio!]!
+  }
+
+  enum CharacterOrderBy {
+    name_ASC
+    name_DESC
+    createdIn_ASC
+    createdIn_DESC
   }
 
   type Query {
-    allCharacters(name: String): [Character!]!
+    allCharacters(name: String, orderBy: CharacterOrderBy): [Character!]!
     Character(id: ID, name: String): Character
   }
 `;
 
 const resolvers = {
   Query: {
-    allCharacters(root, { name }) {
+    allCharacters(root, { name, orderBy }) {
       if (name) {
-        return characters.findByName(name);
+        return characters.findByName(name, { orderBy });
       }
 
-      return characters.getAll();
+      return characters.getAll({ orderBy });
     },
 
     Character(root, { id, name }) {
@@ -51,8 +58,8 @@ const resolvers = {
   },
 
   Character: {
-    studios(parent) {
-      return studios.findByCharacterId(parent.id);
+    studios({ id }, { name, orderBy }) {
+      return studios.findByCharacterId(id, { name, orderBy });
     }
   }
 };
