@@ -13,11 +13,11 @@
 
 ## Data sources
 
-The main resources that were used to make this API work are:
+The main resources that were used to make this API work:
 
 - [Big Cartoon Database](https://www.bcdb.com)
-- ["Golden Age of American Animation" Wiki](https://en.wikipedia.org/wiki/Golden_age_of_American_animation)
-- [List of animation studios](https://en.wikipedia.org/wiki/List_of_animation_studios)
+- ["Golden Age of American Animation" on Wiki](https://en.wikipedia.org/wiki/Golden_age_of_American_animation)
+- [List of animation studios on Wiki](https://en.wikipedia.org/wiki/List_of_animation_studios)
 
 ### Contributing
 
