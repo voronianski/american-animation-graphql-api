@@ -36,13 +36,26 @@ function parseDataFiles(fpaths = []) {
   }, {});
 }
 
-function updateDataFiles(fpaths, data = {}) {
+function updateDataFiles(fpaths = [], data = {}) {
   fpaths.forEach(fpath => {
     const fileName = path.basename(fpath, dataExt);
     const yamlStr = YAML.stringify(data[fileName]);
 
     fs.writeFileSync(fpath, yamlStr, 'utf8');
   });
+}
+
+function skipNameDuplicates(data = {}) {
+  Object.keys(data).forEach(collectionName => {
+    const collectionData = data[collectionName];
+    const names = new Set();
+
+    data[collectionName] = collectionData.filter(item => {
+      return names.has(item.name) ? false : names.add(item.name);
+    });
+  });
+
+  return data;
 }
 
 function populateDataIds(data = {}) {
@@ -107,7 +120,8 @@ function linkCollections(data = {}) {
 function read() {
   const dataFiles = findDataFiles(dataDir);
   const parsedData = parseDataFiles(dataFiles);
-  const dataWithIds = populateDataIds(parsedData);
+  const filteredData = skipNameDuplicates(parsedData);
+  const dataWithIds = populateDataIds(filteredData);
   const readyData = linkCollections(dataWithIds);
 
   return readyData;
@@ -116,7 +130,8 @@ function read() {
 function prepare() {
   const dataFiles = findDataFiles(dataDir);
   const parsedData = parseDataFiles(dataFiles);
-  const dataWithIds = populateDataIds(parsedData);
+  const filteredData = skipNameDuplicates(parsedData);
+  const dataWithIds = populateDataIds(filteredData);
 
   updateDataFiles(dataFiles, dataWithIds);
 

@@ -3,7 +3,7 @@
   studios:
     - Walt Disney Productions
     - M.J. Winkler Productions / Charles Mintz Studios
-    - Waltzer Lantz Productions
+    - Walter Lantz Productions
   id: FC210UIjz
 - name: Mickey Mouse
   createdIn: 1928
@@ -78,3 +78,56 @@
   studios:
     - Warner Bros. Cartoons Inc.
   id: zRcBgexjOD
+- name: Mighty Mouse
+  createdIn: 1942
+  studios:
+    - Terrytoons
+  images:
+    - https://voronianski.github.io/american-animation-graphql-api/mighty-mouse.jpg
+  id: f3WlQRGjn
+- name: Wile E. Coyote
+  createdIn: 1949
+  studios:
+    - Warner Bros. Cartoons Inc.
+  id: kvMAH0uqtl
+- name: Road Runner
+  createdIn: 1949
+  studios:
+    - Warner Bros. Cartoons Inc.
+  id: VVA72k_PUI
+- name: Speedy Gonzales
+  createdIn: 1953
+  studios:
+    - Warner Bros. Cartoons Inc.
+  id: zWQSpGoekl
+- name: Tom Cat
+  createdIn: 1940
+  studios:
+    - Metro-Goldwyn-Mayer Cartoon Studio
+  id: aOnZqnZEtY
+- name: Jerry Mouse
+  createdIn: 1940
+  studios:
+    - Metro-Goldwyn-Mayer Cartoon Studio
+  id: LsU2AOml_v
+- name: Betty Boop
+  createdIn: 1930
+  studios:
+    - Fleischer Studios
+  id: FD8YschgEN
+- name: Woody Woodpecker
+  createdIn: 1940
+  studios:
+    - Walter Lantz Productions
+  id: g8g9qtU8Bk
+- name: Droopy
+  createdIn: 1943
+  studios:
+    - Metro-Goldwyn-Mayer Cartoon Studio
+  id: viSG12V4_7
+- name: Superman
+  createdIn: 1941
+  studios:
+    - Fleischer Studios
+    - Famous Studios
+  id: Ap6XBY54lX

@@ -24,7 +24,9 @@
   "keywords": [
     "graphql",
     "api",
-    "express"
+    "express",
+    "apollo-server",
+    "lowdb"
   ],
   "engines": {
     "node": ">=8.0.0",
