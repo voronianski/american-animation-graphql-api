@@ -21,6 +21,11 @@ const types = gql`
     List of studios that were maintaining rights to the character
     """
     studios(name: String, orderBy: StudioOrderBy): [Studio!]!
+
+    """
+    Images of the character found on the internet
+    """
+    images: [URL!]!
   }
 
   enum CharacterOrderBy {
@@ -60,6 +65,10 @@ const resolvers = {
   Character: {
     studios({ id }, { name, orderBy }) {
       return studios.findByCharacterId(id, { name, orderBy });
+    },
+
+    images({ images }) {
+      return images || [];
     }
   }
 };

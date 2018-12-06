@@ -40,3 +40,40 @@
   studios:
     - Fleischer Studios
     - Famous Studios
+
+- name: Daffy Duck
+  createdIn: 1937
+  studios:
+    - Warner Bros. Cartoons Inc.
+
+- name: Bugs Bunny
+  createdIn: 1938
+  studios:
+    - Warner Bros. Cartoons Inc.
+  images:
+    - https://voronianski.github.io/american-animation-graphql-api/bugs-bunny.gif
+
+- name: Porky Pig
+  createdIn: 1938
+  studios:
+    - Warner Bros. Cartoons Inc.
+
+- name: Sylvester the Cat
+  createdIn: 1939
+  studios:
+    - Warner Bros. Cartoons Inc.
+
+- name: Sylvester Junior
+  createdIn: 1950
+  studios:
+    - Warner Bros. Cartoons Inc.
+
+- name: Tweety Bird
+  createdIn: 1941
+  studios:
+    - Warner Bros. Cartoons Inc.
+
+- name: Hippety Hopper
+  createdIn: 1941
+  studios:
+    - Warner Bros. Cartoons Inc.

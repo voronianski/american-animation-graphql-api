@@ -1,28 +1,16 @@
 - name: Walt Disney Productions
   foundedIn: 1923
   wikiUrl: https://en.wikipedia.org/wiki/The_Walt_Disney_Company
-  characters:
-    - Oswald the Lucky Rabbit
-    - Mickey Mouse
-    - Minnie Mouse
-    - Pluto
-    - Goofy
-    - Donald Duck
-    - Daisy Duck
 
 - name: Fleischer Studios
   foundedIn: 1921
   defunctIn: 1942
   wikiUrl: https://en.wikipedia.org/wiki/Fleischer_Studios
-  characters:
-    - Popeye the Sailor
 
 - name: Famous Studios
   foundedIn: 1942
   defunctIn: 1967
   wikiUrl: https://en.wikipedia.org/wiki/Famous_Studios
-  characters:
-    - Popeye the Sailor
 
 - name: Warner Bros. Cartoons Inc.
   foundedIn: 1933
@@ -38,14 +26,10 @@
   foundedIn: 1929
   defunctIn: 1972
   wikiUrl: https://en.wikipedia.org/wiki/Walter_Lantz_Productions
-  characters:
-    - Oswald the Lucky Rabbit
 
 - name: M.J. Winkler Productions / Charles Mintz Studios
   foundedIn: 1921
   defunctIn: 1940
-  characters:
-    - Oswald the Lucky Rabbit
 
 - name: Pat Sullivan Studio
   foundedIn: 1915

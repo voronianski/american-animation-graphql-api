@@ -45,23 +45,34 @@ function transformData(data = {}) {
   });
 
   // create links between collections
-  Object.keys(data).forEach(collectionName => {
-    const collection = data[collectionName];
+  Object.keys(data).forEach(colName => {
+    const collection = data[colName];
 
-    collection.forEach(collectionItem => {
-      Object.keys(collectionItem).forEach(collectionItemField => {
-        const relatedCollection = data[collectionItemField];
+    collection.forEach(colItem => {
+      Object.keys(colItem).forEach(colItemKey => {
+        const relatedCol = data[colItemKey];
 
-        if (relatedCollection && relatedCollection.length) {
-          const linkedNames = collectionItem[collectionItemField];
+        if (relatedCol && relatedCol.length) {
+          const colItemKeyNames = colItem[colItemKey];
 
-          linkedNames.forEach((linkedName, index) => {
-            const targetItem = relatedCollection.find(item => {
-              return item.name === linkedName;
+          colItemKeyNames.forEach((name, index) => {
+            const relatedColItem = relatedCol.find(item => {
+              return item.name === name;
             });
 
-            if (targetItem) {
-              linkedNames.splice(index, 1, targetItem.id);
+            if (relatedColItem) {
+              colItemKeyNames.splice(index, 1, relatedColItem.id);
+
+              const relatedColItemKeyNames = relatedColItem[colName] || [];
+              const isAlreadyAdded = relatedColItemKeyNames.find(nameOrId => {
+                return nameOrId === colItem.id || nameOrId === colItem.name;
+              });
+
+              if (!isAlreadyAdded) {
+                relatedColItemKeyNames.push(colItem.id);
+              }
+
+              relatedColItem[colName] = relatedColItemKeyNames;
             }
           });
         }

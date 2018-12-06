@@ -7,6 +7,7 @@
     "start": "node ./bin/runServer",
     "dev": "nodemon -w ./src ./bin/runServer -e js,json",
     "clean": "rm .db.json",
+    "assets": "gh-pages -d assets",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
@@ -37,6 +38,7 @@
   },
   "homepage": "https://github.com/voronianski/american-animation-graphql-api#readme",
   "dependencies": {
+    "@okgrow/graphql-scalars": "^0.4.2",
     "apollo-server-express": "^2.2.5",
     "async": "^2.6.1",
     "c0nfig": "^1.0.6",
@@ -53,6 +55,7 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "husky": "^1.2.0",
     "nodemon": "^1.18.7",
     "prettier": "^1.15.3",
