@@ -26,6 +26,11 @@ const types = gql`
     Images of the character found on the internet
     """
     images: [URL!]!
+
+    """
+    Mostly YouTube videos of the shorts that feature the character
+    """
+    videos: [URL!]!
   }
 
   enum CharacterOrderBy {
@@ -69,6 +74,10 @@ const resolvers = {
 
     images({ images }) {
       return images || [];
+    },
+
+    videos({ videos }) {
+      return videos || [];
     }
   }
 };

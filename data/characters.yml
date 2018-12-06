@@ -40,6 +40,8 @@
   studios:
     - Fleischer Studios
     - Famous Studios
+  videos:
+    - https://www.youtube.com/watch?v=XBKrQIgh0qk
   id: IRmTQc2lXD
 - name: Daffy Duck
   createdIn: 1937
@@ -135,16 +137,20 @@
   createdIn: 1939
   studios:
     - Walter Lantz Productions
+  id: GHpzUwTN-
 - name: Felix the Cat
   createdIn: 1919
   studios:
     - Pat Sullivan Studio
     - Van Beuren Studios
+  id: GiJOIiiMg3
 - name: Yogi Bear
   createdIn: 1958
   studios:
     - Hanna-Barbera Productions
+  id: 7eZ2ir8AnM
 - name: Mr. Magoo
   createdIn: 1949
   studios:
     - United Productions of America (UPA)
+  id: RXfb80JZsn
