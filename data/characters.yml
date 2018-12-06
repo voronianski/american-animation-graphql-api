@@ -131,3 +131,20 @@
     - Fleischer Studios
     - Famous Studios
   id: Ap6XBY54lX
+- name: Andy Panda
+  createdIn: 1939
+  studios:
+    - Walter Lantz Productions
+- name: Felix the Cat
+  createdIn: 1919
+  studios:
+    - Pat Sullivan Studio
+    - Van Beuren Studios
+- name: Yogi Bear
+  createdIn: 1958
+  studios:
+    - Hanna-Barbera Productions
+- name: Mr. Magoo
+  createdIn: 1949
+  studios:
+    - United Productions of America (UPA)
