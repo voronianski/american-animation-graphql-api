@@ -1,61 +1,62 @@
 - name: Walt Disney Productions
   foundedIn: 1923
   wikiUrl: https://en.wikipedia.org/wiki/The_Walt_Disney_Company
-
+  id: Rc5hZk9hhN
 - name: Fleischer Studios
   foundedIn: 1921
   defunctIn: 1942
   wikiUrl: https://en.wikipedia.org/wiki/Fleischer_Studios
-
+  id: ur6BO5ei2p7
 - name: Famous Studios
   foundedIn: 1942
   defunctIn: 1967
   wikiUrl: https://en.wikipedia.org/wiki/Famous_Studios
-
+  id: HtFFGEOP724
 - name: Warner Bros. Cartoons Inc.
   foundedIn: 1933
   defunctIn: 1969
   wikiUrl: https://en.wikipedia.org/wiki/Warner_Bros._Cartoons
-
+  id: NkZZU3YCwu7
 - name: Metro-Goldwyn-Mayer Cartoon Studio
   foundedIn: 1937
   defunctIn: 1957
   wikiUrl: https://en.wikipedia.org/wiki/Metro-Goldwyn-Mayer_cartoon_studio
-
+  id: b3N-G_8IdJP
 - name: Waltzer Lantz Productions
   foundedIn: 1929
   defunctIn: 1972
   wikiUrl: https://en.wikipedia.org/wiki/Walter_Lantz_Productions
-
+  id: ZMSLlA0l7Uj
 - name: M.J. Winkler Productions / Charles Mintz Studios
   foundedIn: 1921
   defunctIn: 1940
-
+  id: m55f-zUwW5B
 - name: Pat Sullivan Studio
   foundedIn: 1915
   defunctIn: 1928
-
+  id: kGfS356z4_F
 - name: Van Beuren Studios
   foundedIn: 1921
   defunctIn: 1937
   wikiUrl: https://en.wikipedia.org/wiki/Van_Beuren_Studios
-
+  id: u-RsKhFwhNH
 - name: Terrytoons
   foundedIn: 1929
   defunctIn: 1968
   wikiUrl: https://en.wikipedia.org/wiki/Terrytoons
-
+  id: 6QVgXYcB-M3
 - name: Screen Gems
   foundedIn: 1940
   defunctIn: 1946
   wikiUrl: https://en.wikipedia.org/wiki/Screen_Gems
-
+  id: c12mf17a1H5
 - name: United Productions of America (UPA)
   foundedIn: 1943
   defunctIn: 2000
   wikiUrl: https://en.wikipedia.org/wiki/UPA_(animation_studio)
-
+  id: 22O5gYuAFdj
 - name: Hanna-Barbera Productions
   foundedIn: 1957
   defunctIn: 2001
   wikiUrl: https://en.wikipedia.org/wiki/Hanna-Barbera
+  id: 05c5DL0Dady

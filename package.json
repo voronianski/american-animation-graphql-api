@@ -1,14 +1,21 @@
 {
   "name": "american-animation-graphql-api",
   "version": "1.0.0",
-  "description": "GraphQL API for Golden Age of American Animation",
+  "description": "GraphQL API for Golden Age of American Animation (1928 - 1970)",
   "main": "src/index.js",
   "scripts": {
     "start": "node ./bin/runServer",
     "dev": "nodemon -w ./src ./bin/runServer -e js,json",
     "clean": "rm .db.json",
     "assets": "gh-pages -d assets",
+    "prepare-data": "node ./bin/prepareData",
+    "pretty-code": "pretty-quick --staged",
     "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prepare-data & npm run pretty-code"
+    }
   },
   "repository": {
     "type": "git",
@@ -22,11 +29,6 @@
   "engines": {
     "node": ">=8.0.0",
     "npm": ">=5.5.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
   },
   "prettier": {
     "singleQuote": true
@@ -52,7 +54,7 @@
     "merge-graphql-schemas": "^1.5.8",
     "morgan": "^1.9.1",
     "shortid": "^2.2.14",
-    "yamljs": "^0.3.0"
+    "yaml": "^1.0.3"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",

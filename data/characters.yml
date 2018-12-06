@@ -4,76 +4,77 @@
     - Walt Disney Productions
     - M.J. Winkler Productions / Charles Mintz Studios
     - Waltzer Lantz Productions
-
+  id: FC210UIjz
 - name: Mickey Mouse
   createdIn: 1928
   studios:
     - Walt Disney Productions
-
+  id: sToa4UZHxB
 - name: Minnie Mouse
   createdIn: 1928
   studios:
     - Walt Disney Productions
-
+  id: R8yw5kXY5D
 - name: Pluto
   createdIn: 1930
   studios:
     - Walt Disney Productions
-
+  id: sENDlaGSlY
 - name: Goofy
   createdIn: 1932
   studios:
     - Walt Disney Productions
-
+  id: zjToNOeKSs
 - name: Donald Duck
   createdIn: 1934
   studios:
     - Walt Disney Productions
-
+  id: L7Q8OXPfx2
 - name: Daisy Duck
   createdIn: 1937
   studios:
     - Walt Disney Productions
-
+  id: -Pz3_n1bqy
 - name: Popeye the Sailor
   createdIn: 1933
   studios:
     - Fleischer Studios
     - Famous Studios
-
+  id: IRmTQc2lXD
 - name: Daffy Duck
   createdIn: 1937
   studios:
     - Warner Bros. Cartoons Inc.
-
+  id: Qeb0Dc1SrY
 - name: Bugs Bunny
   createdIn: 1938
   studios:
     - Warner Bros. Cartoons Inc.
   images:
     - https://voronianski.github.io/american-animation-graphql-api/bugs-bunny.gif
-
+  id: 0KcKazo6WM
 - name: Porky Pig
   createdIn: 1938
   studios:
     - Warner Bros. Cartoons Inc.
-
+  id: DbxkFADZIS
 - name: Sylvester the Cat
   createdIn: 1939
   studios:
     - Warner Bros. Cartoons Inc.
-
+  id: qrGRTzjJrb
 - name: Sylvester Junior
   createdIn: 1950
   studios:
     - Warner Bros. Cartoons Inc.
-
+  id: BPqFZhhCwT
 - name: Tweety Bird
   createdIn: 1941
   studios:
     - Warner Bros. Cartoons Inc.
-
+  id: -IL418myA3
 - name: Hippety Hopper
   createdIn: 1941
   studios:
     - Warner Bros. Cartoons Inc.
+  id: zRcBgexjOD

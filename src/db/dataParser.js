@@ -1,13 +1,17 @@
+const fs = require('fs');
 const path = require('path');
-const YAML = require('yamljs');
+const YAML = require('yaml');
 const klawSync = require('klaw-sync');
 const shortid = require('shortid');
+
+const dataExt = '.yml';
+const dataDir = path.resolve(__dirname, '../../data');
 
 function findDataFiles(dirPath) {
   return klawSync(dirPath, {
     nodir: true,
     traverseAll: true,
-    filter: f => path.extname(f.path) === '.yml'
+    filter: f => path.extname(f.path) === dataExt
   }).map(f => f.path);
 }
 
@@ -16,13 +20,15 @@ function parseDataFiles(fpaths = []) {
     let fileData;
 
     try {
-      fileData = YAML.load(fpath);
+      const file = fs.readFileSync(fpath, 'utf8');
+
+      fileData = YAML.parse(file);
     } catch (err) {
       console.log(`Failed to parse YAML from ${fpath}`, err);
     }
 
     if (fileData) {
-      const fileName = path.basename(fpath, '.yml');
+      const fileName = path.basename(fpath, dataExt);
       memo[fileName] = fileData;
     }
 
@@ -30,9 +36,21 @@ function parseDataFiles(fpaths = []) {
   }, {});
 }
 
-function transformData(data = {}) {
-  // populate all items with ids
-  const addId = (obj = {}) => (obj.id = shortid.generate());
+function updateDataFiles(fpaths, data = {}) {
+  fpaths.forEach(fpath => {
+    const fileName = path.basename(fpath, dataExt);
+    const yamlStr = YAML.stringify(data[fileName]);
+
+    fs.writeFileSync(fpath, yamlStr, 'utf8');
+  });
+}
+
+function populateDataIds(data = {}) {
+  const addId = (obj = {}) => {
+    if (!obj.id) {
+      obj.id = shortid.generate();
+    }
+  };
 
   Object.keys(data).forEach(collectionName => {
     const collectionData = data[collectionName];
@@ -44,7 +62,10 @@ function transformData(data = {}) {
     }
   });
 
-  // create links between collections
+  return data;
+}
+
+function linkCollections(data = {}) {
   Object.keys(data).forEach(colName => {
     const collection = data[colName];
 
@@ -84,12 +105,22 @@ function transformData(data = {}) {
 }
 
 function read() {
-  const dataDir = path.resolve(__dirname, '../../data');
   const dataFiles = findDataFiles(dataDir);
   const parsedData = parseDataFiles(dataFiles);
-  const readyData = transformData(parsedData);
+  const dataWithIds = populateDataIds(parsedData);
+  const readyData = linkCollections(dataWithIds);
 
   return readyData;
 }
 
-module.exports = { read };
+function prepare() {
+  const dataFiles = findDataFiles(dataDir);
+  const parsedData = parseDataFiles(dataFiles);
+  const dataWithIds = populateDataIds(parsedData);
+
+  updateDataFiles(dataFiles, dataWithIds);
+
+  return dataWithIds;
+}
+
+module.exports = { read, prepare };
