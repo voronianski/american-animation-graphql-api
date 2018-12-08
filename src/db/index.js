@@ -1,3 +1,5 @@
+const path = require('path');
+const fs = require('fs-extra');
 const low = require('lowdb');
 const FileAsync = require('lowdb/adapters/FileAsync');
 const shortid = require('shortid');
@@ -13,7 +15,13 @@ function getInstance() {
   return dbInstance;
 }
 
+function cleanDb() {
+  fs.removeSync(path.resolve(__dirname, '../../.db.json'));
+}
+
 function init() {
+  cleanDb();
+
   const data = dataParser.read();
   const adapter = new FileAsync('.db.json');
 
@@ -25,4 +33,4 @@ function init() {
   });
 }
 
-module.exports = { getInstance, init };
+module.exports = { getInstance, cleanDb, init };
