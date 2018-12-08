@@ -15,22 +15,36 @@ function getInstance() {
   return dbInstance;
 }
 
-function cleanDb() {
+function setInstance(db) {
+  dbInstance = db;
+}
+
+function cleanDataFile() {
   fs.removeSync(path.resolve(__dirname, '../../.db.json'));
 }
 
-function init() {
-  cleanDb();
-
+function configureData() {
   const data = dataParser.read();
-  const adapter = new FileAsync('.db.json');
 
-  return low(adapter).then(db => {
-    dbInstance = db;
+  dbInstance._.mixin(lodashId);
+  dbInstance.defaults(data).write();
+}
 
-    db._.mixin(lodashId);
-    db.defaults(data).write();
+function init() {
+  cleanDataFile();
+
+  const dbAdapter = new FileAsync('.db.json');
+
+  return low(dbAdapter).then(db => {
+    setInstance(db);
+    configureData();
   });
 }
 
-module.exports = { getInstance, cleanDb, init };
+module.exports = {
+  getInstance,
+  setInstance,
+  configureData,
+  cleanDataFile,
+  init
+};

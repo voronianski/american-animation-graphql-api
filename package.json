@@ -11,12 +11,17 @@
     "deploy-assets": "gh-pages -d assets",
     "prepare-data": "node ./bin/prepareData",
     "pretty-code": "pretty-quick --staged",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "jest ."
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run prepare-data & npm run pretty-code"
     }
+  },
+  "jest": {
+    "setupFiles": [
+      "./src/setupTests.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -63,6 +68,7 @@
   "devDependencies": {
     "gh-pages": "^2.0.1",
     "husky": "^1.2.0",
+    "jest": "^23.6.0",
     "nodemon": "^1.18.7",
     "prettier": "^1.15.3",
     "pretty-quick": "^1.8.0"
