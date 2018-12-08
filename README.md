@@ -18,7 +18,8 @@ The main resources that were used to make this API work:
 - [Big Cartoon Database](https://www.bcdb.com)
 - ["Golden Age of American Animation" on Wiki](https://en.wikipedia.org/wiki/Golden_age_of_American_animation)
 - [List of animation studios on Wiki](https://en.wikipedia.org/wiki/List_of_animation_studios)
-- ["The 50 Greatest Cartoons: As Selected by 1,000 Animation Professionals" (1994 book by animation historian Jerry Beck)](https://en.wikipedia.org/wiki/The_50_Greatest_Cartoons)
+- "The 50 Greatest Cartoons: As Selected by 1,000 Animation Professionals" (1994 book by animation historian Jerry Beck)
+  - [Wiki article](https://en.wikipedia.org/wiki/The_50_Greatest_Cartoons) 
   - [List on Mubi](https://mubi.com/lists/the-50-greatest-cartoons-as-selected-by-1000-animation-professionals)
 
 ### Contributing
