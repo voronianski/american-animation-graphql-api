@@ -1,5 +1,6 @@
 const { gql } = require('apollo-server-express');
 
+const videos = require('../../services/videos');
 const studios = require('../../services/studios');
 const characters = require('../../services/characters');
 
@@ -23,14 +24,14 @@ const types = gql`
     studios(name: String, orderBy: StudioOrderBy): [Studio!]!
 
     """
-    Images of the character found on the internet
+    List of links to some images of the character found on the web
     """
     images: [URL!]!
 
     """
-    Mostly YouTube videos of the shorts that feature the character
+    List of available on the web animated cartoons' videos that feature the character
     """
-    videos: [URL!]!
+    videos: [Video!]!
   }
 
   enum CharacterOrderBy {
@@ -76,8 +77,8 @@ const resolvers = {
       return images || [];
     },
 
-    videos({ videos }) {
-      return videos || [];
+    videos({ id }, { name, orderBy }) {
+      return videos.findByCharacterId(id, { name, orderBy });
     }
   }
 };

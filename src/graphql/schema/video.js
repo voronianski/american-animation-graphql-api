@@ -1,0 +1,91 @@
+const { gql } = require('apollo-server-express');
+
+const videos = require('../../services/videos');
+const studios = require('../../services/studios');
+const characters = require('../../services/characters');
+
+const types = gql`
+  type Video {
+    id: ID!
+
+    """
+    Official name of the animated cartoon
+    """
+    name: String!
+
+    """
+    Year when cartoon was released to the public
+    """
+    releasedIn: Int!
+
+    """
+    Name of the animated cartoon's director
+    """
+    directedBy: String!
+
+    """
+    Studio that produced the animated cartoon
+    """
+    studio: Studio
+
+    """
+    List of characters that were featured in the animated cartoon
+    """
+    characters(name: String, orderBy: CharacterOrderBy): [Character!]!
+
+    """
+    List of available YouTube or Vimeo links to full-length versions of the animated cartoon
+    """
+    links: [URL!]!
+  }
+
+  enum VideoOrderBy {
+    name_ASC
+    name_DESC
+    releasedIn_ASC
+    releasedIn_DESC
+  }
+
+  type Query {
+    allVideos(name: String, orderBy: VideoOrderBy): [Video!]!
+    Video(id: ID, name: String): Video
+  }
+`;
+
+const resolvers = {
+  Query: {
+    allVideos(root, { name, orderBy }) {
+      if (name) {
+        return videos.findByName(name, { orderBy });
+      }
+
+      return videos.getAll({ orderBy });
+    },
+
+    Video(root, { id, name }) {
+      if (id) {
+        return videos.findOneById(id);
+      }
+
+      if (name) {
+        return videos.findOneByName(name);
+      }
+    }
+  },
+
+  Video: {
+    studio({ studio: studioName }) {
+      return studios.findOneByName(studioName);
+    },
+
+    characters({ id }, { name, orderBy }) {
+      return characters.findByVideoId(id, { name, orderBy });
+    },
+
+    links({ links }) {
+      return links || [];
+    }
+  }
+};
+
+module.exports = { types, resolvers };

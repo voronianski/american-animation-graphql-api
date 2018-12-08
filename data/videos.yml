@@ -1,0 +1,46 @@
+- name: What's Opera, Doc?
+  releasedIn: 1957
+  directedBy: Chuck Jones
+  studio: Warner Bros. Cartoons Inc.
+  characters:
+    - Bugs Bunny
+    - Elmer J. Fudd
+  links:
+    - https://vimeo.com/218263252
+
+- name: Rabbit of Seville
+  releasedIn: 1950
+  directedBy: Chuck Jones
+  studio: Warner Bros. Cartoons Inc.
+  characters:
+    - Bugs Bunny
+    - Elmer J. Fudd
+  links:
+    - https://vimeo.com/182263712
+
+- name: Der Fuehrer's Face
+  releasedIn: 1943
+  directedBy: Jack Kinney
+  studio: Walt Disney Productions
+  characters:
+    - Donald Duck
+  links:
+    - https://vimeo.com/104018771
+
+- name: Aladdin and His Wonderful Lamp
+  releasedIn: 1939
+  directedBy: Dave Fleischer
+  studio: Fleischer Studios
+  characters:
+    - Popeye the Sailor
+  links:
+    - https://vimeo.com/153543605
+
+- name: Red Hot Riding Hood
+  releasedIn: 1943
+  directedBy: Tex Avery
+  studio: Metro-Goldwyn-Mayer Cartoon Studio
+  characters:
+    - Red
+  links:
+    - https://vimeo.com/218354742

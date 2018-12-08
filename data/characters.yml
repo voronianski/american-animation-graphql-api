@@ -40,8 +40,6 @@
   studios:
     - Fleischer Studios
     - Famous Studios
-  videos:
-    - https://www.youtube.com/watch?v=XBKrQIgh0qk
   id: IRmTQc2lXD
 - name: Daffy Duck
   createdIn: 1937
@@ -127,6 +125,10 @@
   studios:
     - Metro-Goldwyn-Mayer Cartoon Studio
   id: viSG12V4_7
+- name: Red
+  createdIn: 1943
+  studios:
+    - Metro-Goldwyn-Mayer Cartoon Studio
 - name: Superman
   createdIn: 1941
   studios:
@@ -154,3 +156,7 @@
   studios:
     - United Productions of America (UPA)
   id: RXfb80JZsn
+- name: Elmer J. Fudd
+  createdIn: 1937
+  studios:
+    - Warner Bros. Cartoons Inc.

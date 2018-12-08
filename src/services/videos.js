@@ -6,7 +6,7 @@ function getAll({ orderBy }) {
 
   return db
     .getInstance()
-    .get('studios')
+    .get('videos')
     .orderBy(sort.key, sort.order)
     .value();
 }
@@ -14,7 +14,7 @@ function getAll({ orderBy }) {
 function findOneById(id) {
   return db
     .getInstance()
-    .get('studios')
+    .get('videos')
     .getById(id)
     .value();
 }
@@ -24,8 +24,8 @@ function findByName(name, { orderBy }) {
 
   return db
     .getInstance()
-    .get('studios')
-    .filter(studio => studio.name.toLowerCase().includes(name.toLowerCase()))
+    .get('videos')
+    .filter(video => video.name.toLowerCase().includes(name.toLowerCase()))
     .orderBy(sort.key, sort.order)
     .value();
 }
@@ -33,8 +33,8 @@ function findByName(name, { orderBy }) {
 function findOneByName(name) {
   return db
     .getInstance()
-    .get('studios')
-    .find(studio => studio.name.toLowerCase().includes(name.toLowerCase()))
+    .get('videos')
+    .find(video => video.name.toLowerCase().includes(name.toLowerCase()))
     .value();
 }
 
@@ -43,15 +43,26 @@ function findByCharacterId(characterId, { name, orderBy }) {
 
   let _db = db
     .getInstance()
-    .get('studios')
-    .filter(
-      studio => studio.characters && studio.characters.includes(characterId)
-    );
+    .get('videos')
+    .filter(video => video.characters && video.characters.includes(characterId));
 
   if (name) {
-    _db = _db.filter(studio =>
-      studio.name.toLowerCase().includes(name.toLowerCase())
-    );
+    _db = _db.filter(video => video.name.toLowerCase().includes(name.toLowerCase()));
+  }
+
+  return _db.orderBy(sort.key, sort.order).value();
+}
+
+function findByStudioName(studioName, { name, orderBy }) {
+  const sort = getSort(orderBy);
+
+  let _db = db
+    .getInstance()
+    .get('videos')
+    .filter(video => video.studio === studioName);
+
+  if (name) {
+    _db = _db.filter(video => video.name.toLowerCase().includes(name.toLowerCase()));
   }
 
   return _db.orderBy(sort.key, sort.order).value();
@@ -60,6 +71,7 @@ function findByCharacterId(characterId, { name, orderBy }) {
 module.exports = {
   getAll,
   findByName,
+  findByStudioName,
   findByCharacterId,
   findOneById,
   findOneByName
