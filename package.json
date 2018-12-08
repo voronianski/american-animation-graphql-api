@@ -23,6 +23,9 @@
       "./src/setupTests.js"
     ]
   },
+  "prettier": {
+    "singleQuote": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/voronianski/american-animation-graphql-api.git"
@@ -37,9 +40,6 @@
   "engines": {
     "node": ">=8.0.0",
     "npm": ">=5.5.0"
-  },
-  "prettier": {
-    "singleQuote": true
   },
   "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
   "license": "MIT",
