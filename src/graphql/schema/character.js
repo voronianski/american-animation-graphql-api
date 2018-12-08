@@ -19,12 +19,13 @@ const types = gql`
     createdIn: Int!
 
     """
-    List of studios that were maintaining rights to the character
+    List of studios that were maintaining rights to the character during the Golden Age period
     """
     studios(name: String, orderBy: StudioOrderBy): [Studio!]!
 
     """
-    List of links to some images of the character found on the web
+    List of links to some images of the character found on the web and stored under GitHub pages CDN.
+    Be careful as images have different sizes.
     """
     images: [URL!]!
 

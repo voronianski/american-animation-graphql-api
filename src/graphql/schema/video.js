@@ -34,7 +34,7 @@ const types = gql`
     characters(name: String, orderBy: CharacterOrderBy): [Character!]!
 
     """
-    List of available YouTube or Vimeo links to full-length versions of the animated cartoon
+    List of available YouTube or Vimeo links to full-length version of the animated cartoon
     """
     links: [URL!]!
   }
