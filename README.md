@@ -34,6 +34,7 @@ For now only cartoon characters, studios that produced them and some videos are 
 
 ```bash
 npm i
+npm test
 npm run dev
 ```
 
