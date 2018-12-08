@@ -1,5 +1,6 @@
 # american-animation-graphql-api
 
+[![Build Status](https://travis-ci.org/voronianski/american-animation-graphql-api.svg?branch=master)](https://travis-ci.org/voronianski/american-animation-graphql-api)
 <a href="https://www.buymeacoffee.com/voronianski" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" height="20" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 > ["Golden Age of American Animation" (1928 - 1970)](https://en.wikipedia.org/wiki/Golden_age_of_American_animation) as GraphQL API.
