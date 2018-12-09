@@ -59,7 +59,7 @@ function findByStudioName(studioName, { name, orderBy }) {
   let _db = db
     .getInstance()
     .get('videos')
-    .filter(video => video.studio === studioName);
+    .filter(video => video.studio.toLowerCase().includes(studioName.toLowerCase()));
 
   if (name) {
     _db = _db.filter(video => video.name.toLowerCase().includes(name.toLowerCase()));
