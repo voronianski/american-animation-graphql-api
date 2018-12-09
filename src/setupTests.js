@@ -4,7 +4,7 @@ const Memory = require('lowdb/adapters/Memory');
 const db = require('./db');
 
 const dbAdapter = new Memory();
-const dbInsance = low(dbAdapter);
+const dbInstance = low(dbAdapter);
 
-db.setInstance(dbInsance);
+db.setInstance(dbInstance);
 db.configureData();

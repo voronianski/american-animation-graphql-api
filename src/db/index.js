@@ -23,8 +23,8 @@ function cleanDataFile() {
   fs.removeSync(path.resolve(__dirname, '../../.db.json'));
 }
 
-function configureData() {
-  const data = dataParser.read();
+function configureData(mockedData) {
+  const data = mockedData || dataParser.read();
 
   dbInstance._.mixin(lodashId);
   dbInstance.defaults(data).write();
