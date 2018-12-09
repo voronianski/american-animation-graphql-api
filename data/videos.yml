@@ -2,6 +2,7 @@
   releasedIn: 1957
   directedBy: Chuck Jones
   studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0051189
   characters:
     - Bugs Bunny
     - Elmer J. Fudd
@@ -12,6 +13,7 @@
   releasedIn: 1950
   directedBy: Chuck Jones
   studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0042871
   characters:
     - Bugs Bunny
     - Elmer J. Fudd
@@ -22,6 +24,7 @@
   releasedIn: 1943
   directedBy: Jack Kinney
   studio: Walt Disney Productions
+  imdbUrl: https://www.imdb.com/title/tt0035794
   characters:
     - Donald Duck
   links:
@@ -31,6 +34,7 @@
   releasedIn: 1939
   directedBy: Dave Fleischer
   studio: Fleischer Studios
+  imdbUrl: https://www.imdb.com/title/tt0031025
   characters:
     - Popeye the Sailor
   links:
@@ -40,6 +44,7 @@
   releasedIn: 1943
   directedBy: Tex Avery
   studio: Metro-Goldwyn-Mayer Cartoon Studio
+  imdbUrl: https://www.imdb.com/title/tt0036295
   characters:
     - Red
   links:
@@ -49,6 +54,7 @@
   releasedIn: 1947
   directedBy: Tex Avery
   studio: Metro-Goldwyn-Mayer Cartoon Studio
+  imdbUrl: https://www.imdb.com/title/tt0039535
   links:
     - https://vimeo.com/236173567
   id: EQdgAoAEl
@@ -56,6 +62,7 @@
   releasedIn: 1945
   directedBy: Tex Avery
   studio: Metro-Goldwyn-Mayer Cartoon Studio
+  imdbUrl: https://www.imdb.com/title/tt0038143
   characters:
     - Red
   links:
@@ -65,6 +72,7 @@
   releasedIn: 1946
   directedBy: Robert Clampett
   studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0038576
   characters:
     - Daffy Duck
   links:
@@ -74,6 +82,7 @@
   releasedIn: 1949
   directedBy: Tex Avery
   studio: Metro-Goldwyn-Mayer Cartoon Studio
+  imdbUrl: https://www.imdb.com/title/tt0041593
   characters:
     - Red
   links:
@@ -83,6 +92,29 @@
   releasedIn: 1943
   directedBy: Tex Avery
   studio: Metro-Goldwyn-Mayer Cartoon Studio
+  imdbUrl: https://www.imdb.com/title/tt0036535
   links:
     - https://vimeo.com/218295305
   id: vmfDWUFvo1
+- name: A Pest in the House
+  releasedIn: 1947
+  directedBy: Chuck Jones
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0039700
+  characters:
+    - Daffy Duck
+    - Elmer J. Fudd
+  links:
+    - https://vimeo.com/294970327
+  id: KsurrwTNz
+- name: The Shooting of Dan McGoo
+  releasedIn: 1945
+  directedBy: Tex Avery
+  studio: Metro-Goldwyn-Mayer Cartoon Studio
+  imdbUrl: https://www.imdb.com/title/tt0038087
+  characters:
+    - Red
+    - Droopy
+  links:
+    - https://www.dailymotion.com/video/x4833qx
+  id: zxGrQjdmwJ

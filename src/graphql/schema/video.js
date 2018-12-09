@@ -37,6 +37,11 @@ const types = gql`
     List of available links on the web (e.g. YouTube, Vimeo, Dailymotion) to full-length version of the animated cartoon
     """
     links: [URL!]!
+
+    """
+    Link to IMDB article about the animated cartoon
+    """
+    imdbUrl: URL
   }
 
   enum VideoOrderBy {

@@ -26,7 +26,7 @@ const types = gql`
     """
     Link to Wikipedia article about the studio
     """
-    wikiUrl: String
+    wikiUrl: URL
 
     """
     List of characters produced by the studio
