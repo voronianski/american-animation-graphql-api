@@ -21,7 +21,9 @@ describe('videos service', () => {
         orderBy: 'releasedIn_ASC'
       });
 
-      expect(videosList[0].releasedIn).toBeLessThan(videosList[1].releasedIn);
+      expect(videosList[0].releasedIn).toBeLessThanOrEqual(
+        videosList[1].releasedIn
+      );
     });
 
     it('should support descending orderBy param', () => {
@@ -29,7 +31,7 @@ describe('videos service', () => {
         orderBy: 'releasedIn_DESC'
       });
 
-      expect(videosList[0].releasedIn).toBeGreaterThan(
+      expect(videosList[0].releasedIn).toBeGreaterThanOrEqual(
         videosList[1].releasedIn
       );
     });
@@ -51,7 +53,9 @@ describe('videos service', () => {
         orderBy: 'releasedIn_ASC'
       });
 
-      expect(videosList[0].releasedIn).toBeLessThan(videosList[1].releasedIn);
+      expect(videosList[0].releasedIn).toBeLessThanOrEqual(
+        videosList[1].releasedIn
+      );
     });
 
     it('should support descending orderBy param', () => {
@@ -59,7 +63,7 @@ describe('videos service', () => {
         orderBy: 'releasedIn_DESC'
       });
 
-      expect(videosList[0].releasedIn).toBeGreaterThan(
+      expect(videosList[0].releasedIn).toBeGreaterThanOrEqual(
         videosList[1].releasedIn
       );
     });
@@ -89,7 +93,9 @@ describe('videos service', () => {
         orderBy: 'releasedIn_ASC'
       });
 
-      expect(videosList[0].releasedIn).toBeLessThan(videosList[1].releasedIn);
+      expect(videosList[0].releasedIn).toBeLessThanOrEqual(
+        videosList[1].releasedIn
+      );
     });
 
     it('should support descending orderBy param', () => {
@@ -97,7 +103,7 @@ describe('videos service', () => {
         orderBy: 'releasedIn_DESC'
       });
 
-      expect(videosList[0].releasedIn).toBeGreaterThan(
+      expect(videosList[0].releasedIn).toBeGreaterThanOrEqual(
         videosList[1].releasedIn
       );
     });
@@ -127,7 +133,9 @@ describe('videos service', () => {
         orderBy: 'releasedIn_ASC'
       });
 
-      expect(videosList[0].releasedIn).toBeLessThan(videosList[1].releasedIn);
+      expect(videosList[0].releasedIn).toBeLessThanOrEqual(
+        videosList[1].releasedIn
+      );
     });
 
     it('should support descending orderBy param', () => {
@@ -135,7 +143,7 @@ describe('videos service', () => {
         orderBy: 'releasedIn_DESC'
       });
 
-      expect(videosList[0].releasedIn).toBeGreaterThan(
+      expect(videosList[0].releasedIn).toBeGreaterThanOrEqual(
         videosList[1].releasedIn
       );
     });
@@ -161,7 +169,7 @@ describe('videos service', () => {
     });
 
     it('should find one item with matching name', () => {
-      const name = 'What\'s Opera, Doc?';
+      const name = "What's Opera, Doc?";
       const videoItem = videos.findOneByName(name);
 
       expect(videoItem).toBeDefined();
