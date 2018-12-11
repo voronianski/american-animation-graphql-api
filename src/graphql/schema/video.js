@@ -52,16 +52,20 @@ const types = gql`
   }
 
   type Query {
-    allVideos(name: String, orderBy: VideoOrderBy): [Video!]!
+    allVideos(name: String, orderBy: VideoOrderBy, selectIds: [ID!]!): [Video!]!
     Video(id: ID, name: String): Video
   }
 `;
 
 const resolvers = {
   Query: {
-    allVideos(root, { name, orderBy }) {
+    allVideos(root, { name, orderBy, selectIds }) {
       if (name) {
         return videos.findByName(name, { orderBy });
+      }
+
+      if (selectIds) {
+        return videos.findByIds(selectIds, { name, orderBy });
       }
 
       return videos.getAll({ orderBy });

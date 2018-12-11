@@ -176,4 +176,50 @@ describe('videos service', () => {
       expect(videoItem).toHaveProperty('name', name);
     });
   });
+
+  describe('findByIds method', () => {
+    it('should exist', () => {
+      expect(videos.findByIds).toEqual(expect.any(Function));
+    });
+
+    it('should find only videos with selected ids and keep order by default', () => {
+      const ids = ['9OxQsvoFyG', 'YcbwIeKl0z'];
+      const videoList = videos.findByIds(ids, {});
+
+      expect(videoList.length).toEqual(2);
+      expect(videoList[0].id).toEqual(ids[0]);
+      expect(videoList[1].id).toEqual(ids[1]);
+    });
+
+    it('should also support filtering by name param', () => {
+      const ids = ['9OxQsvoFyG', 'YcbwIeKl0z'];
+      const videosList = videos.findByIds(ids, {
+        name: 'seville'
+      });
+
+      expect(videosList.length).toBeGreaterThanOrEqual(1);
+    });
+
+    it('should support ascending orderBy param', () => {
+      const ids = ['9OxQsvoFyG', 'YcbwIeKl0z'];
+      const videosList = videos.findByIds(ids, {
+        orderBy: 'releasedIn_ASC'
+      });
+
+      expect(videosList[0].releasedIn).toBeLessThanOrEqual(
+        videosList[1].releasedIn
+      );
+    });
+
+    it('should support descending orderBy param', () => {
+      const ids = ['9OxQsvoFyG', 'YcbwIeKl0z'];
+      const videosList = videos.findByIds(ids, {
+        orderBy: 'releasedIn_DESC'
+      });
+
+      expect(videosList[0].releasedIn).toBeGreaterThanOrEqual(
+        videosList[1].releasedIn
+      );
+    });
+  });
 });
