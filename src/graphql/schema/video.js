@@ -31,7 +31,11 @@ const types = gql`
     """
     List of characters that were featured in the animated cartoon
     """
-    characters(name: String, orderBy: CharacterOrderBy): [Character!]!
+    characters(
+      name: String
+      orderBy: CharacterOrderBy
+      selectIds: [ID!]!
+    ): [Character!]!
 
     """
     List of available links on the web (e.g. YouTube, Vimeo, Dailymotion) to full-length version of the animated cartoon

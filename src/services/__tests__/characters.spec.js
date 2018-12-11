@@ -176,4 +176,50 @@ describe('characters service', () => {
       expect(characterItem).toHaveProperty('name', name);
     });
   });
+
+  describe('findByIds method', () => {
+    it('should exist', () => {
+      expect(characters.findByIds).toEqual(expect.any(Function));
+    });
+
+    it('should find only characters with selected ids and keep order by default', () => {
+      const ids = ['sToa4UZHxB', '0KcKazo6WM'];
+      const charactersList = characters.findByIds(ids, {});
+
+      expect(charactersList.length).toEqual(2);
+      expect(charactersList[0].id).toEqual(ids[0]);
+      expect(charactersList[1].id).toEqual(ids[1]);
+    });
+
+    it('should also support filtering by name param', () => {
+      const ids = ['sToa4UZHxB', '0KcKazo6WM'];
+      const charactersList = characters.findByIds(ids, {
+        name: 'mickey'
+      });
+
+      expect(charactersList.length).toBeGreaterThanOrEqual(1);
+    });
+
+    it('should support ascending orderBy param', () => {
+      const ids = ['sToa4UZHxB', '0KcKazo6WM'];
+      const charactersList = characters.findByIds(ids, {
+        orderBy: 'createdIn_ASC'
+      });
+
+      expect(charactersList[0].createdIn).toBeLessThanOrEqual(
+        charactersList[1].createdIn
+      );
+    });
+
+    it('should support descending orderBy param', () => {
+      const ids = ['sToa4UZHxB', '0KcKazo6WM'];
+      const charactersList = characters.findByIds(ids, {
+        orderBy: 'createdIn_DESC'
+      });
+
+      expect(charactersList[0].createdIn).toBeGreaterThanOrEqual(
+        charactersList[1].createdIn
+      );
+    });
+  });
 });

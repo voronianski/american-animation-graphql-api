@@ -21,7 +21,7 @@ const types = gql`
     """
     List of studios that were maintaining rights to the character during the Golden Age period
     """
-    studios(name: String, orderBy: StudioOrderBy): [Studio!]!
+    studios(name: String, orderBy: StudioOrderBy, selectIds: [ID!]!): [Studio!]!
 
     """
     List of links to some images of the character found on the web and stored under GitHub pages CDN.
@@ -32,7 +32,7 @@ const types = gql`
     """
     List of available on the web animated cartoons' videos that feature the character
     """
-    videos(name: String, orderBy: VideoOrderBy): [Video!]!
+    videos(name: String, orderBy: VideoOrderBy, selectIds: [ID!]!): [Video!]!
   }
 
   enum CharacterOrderBy {
@@ -43,16 +43,24 @@ const types = gql`
   }
 
   type Query {
-    allCharacters(name: String, orderBy: CharacterOrderBy): [Character!]!
+    allCharacters(
+      name: String
+      orderBy: CharacterOrderBy
+      selectIds: [ID!]!
+    ): [Character!]!
     Character(id: ID, name: String): Character
   }
 `;
 
 const resolvers = {
   Query: {
-    allCharacters(root, { name, orderBy }) {
+    allCharacters(root, { name, orderBy, selectIds }) {
       if (name) {
         return characters.findByName(name, { orderBy });
+      }
+
+      if (selectIds) {
+        return characters.findByIds(selectIds, { name, orderBy });
       }
 
       return characters.getAll({ orderBy });

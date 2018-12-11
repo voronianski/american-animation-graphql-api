@@ -31,7 +31,11 @@ const types = gql`
     """
     List of characters produced by the studio
     """
-    characters(name: String, orderBy: CharacterOrderBy): [Character!]!
+    characters(
+      name: String
+      orderBy: CharacterOrderBy
+      selectIds: [ID!]!
+    ): [Character!]!
 
     """
     List of available on the web animated cartoons' videos produced by the studio
@@ -49,16 +53,24 @@ const types = gql`
   }
 
   type Query {
-    allStudios(name: String, orderBy: StudioOrderBy): [Studio!]!
+    allStudios(
+      name: String
+      orderBy: StudioOrderBy
+      selectIds: [ID!]!
+    ): [Studio!]!
     Studio(id: ID, name: String): Studio
   }
 `;
 
 const resolvers = {
   Query: {
-    allStudios(root, { name, orderBy }) {
+    allStudios(root, { name, orderBy, selectIds }) {
       if (name) {
         return studios.findByName(name, { orderBy });
+      }
+
+      if (selectIds) {
+        return studios.findByIds(selectIds, { name, orderBy });
       }
 
       return studios.getAll({ orderBy });

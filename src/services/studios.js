@@ -57,8 +57,38 @@ function findByCharacterId(characterId, { name, orderBy }) {
   return _db.orderBy(sort.key, sort.order).value();
 }
 
+function findByIds(idList, { name, orderBy }) {
+  let _db = db
+    .getInstance()
+    .get('studios')
+    .filter(studio => idList.includes(studio.id));
+
+  if (name) {
+    _db = _db.filter(studio =>
+      studio.name.toLowerCase().includes(name.toLowerCase())
+    );
+  }
+
+  if (orderBy) {
+    const sort = getSort(orderBy);
+
+    _db = _db.orderBy(sort.key, sort.order);
+  } else {
+    _db = _db.reduce((memo, studio, index) => {
+      const originalIndex = idList.indexOf(studio.id);
+
+      memo.splice(originalIndex, 0, studio);
+
+      return memo;
+    }, []);
+  }
+
+  return _db.value();
+}
+
 module.exports = {
   getAll,
+  findByIds,
   findByName,
   findByCharacterId,
   findOneById,

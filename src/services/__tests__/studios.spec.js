@@ -136,4 +136,50 @@ describe('studios service', () => {
       expect(studioItem).toHaveProperty('name', name);
     });
   });
+
+  describe('findByIds method', () => {
+    it('should exist', () => {
+      expect(studios.findByIds).toEqual(expect.any(Function));
+    });
+
+    it('should find only studios with selected ids and keep order by default', () => {
+      const ids = ['Rc5hZk9hhN', 'ur6BO5ei2p7'];
+      const studiosList = studios.findByIds(ids, {});
+
+      expect(studiosList.length).toEqual(2);
+      expect(studiosList[0].id).toEqual(ids[0]);
+      expect(studiosList[1].id).toEqual(ids[1]);
+    });
+
+    it('should also support filtering by name param', () => {
+      const ids = ['Rc5hZk9hhN', 'ur6BO5ei2p7'];
+      const studiosList = studios.findByIds(ids, {
+        name: 'walt'
+      });
+
+      expect(studiosList.length).toBeGreaterThanOrEqual(1);
+    });
+
+    it('should support ascending orderBy param', () => {
+      const ids = ['Rc5hZk9hhN', 'ur6BO5ei2p7'];
+      const studiosList = studios.findByIds(ids, {
+        orderBy: 'foundedIn_ASC'
+      });
+
+      expect(studiosList[0].foundedIn).toBeLessThanOrEqual(
+        studiosList[1].foundedIn
+      );
+    });
+
+    it('should support descending orderBy param', () => {
+      const ids = ['Rc5hZk9hhN', 'ur6BO5ei2p7'];
+      const studiosList = studios.findByIds(ids, {
+        orderBy: 'foundedIn_DESC'
+      });
+
+      expect(studiosList[0].foundedIn).toBeGreaterThanOrEqual(
+        studiosList[1].foundedIn
+      );
+    });
+  });
 });
