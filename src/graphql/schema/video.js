@@ -34,7 +34,7 @@ const types = gql`
     characters(
       name: String
       orderBy: CharacterOrderBy
-      selectIds: [ID!]!
+      selectIds: [ID!]
     ): [Character!]!
 
     """
@@ -56,7 +56,7 @@ const types = gql`
   }
 
   type Query {
-    allVideos(name: String, orderBy: VideoOrderBy, selectIds: [ID!]!): [Video!]!
+    allVideos(name: String, orderBy: VideoOrderBy, selectIds: [ID!]): [Video!]!
     Video(id: ID, name: String): Video
   }
 `;

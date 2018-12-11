@@ -34,13 +34,13 @@ const types = gql`
     characters(
       name: String
       orderBy: CharacterOrderBy
-      selectIds: [ID!]!
+      selectIds: [ID!]
     ): [Character!]!
 
     """
     List of available on the web animated cartoons' videos produced by the studio
     """
-    videos(name: String, orderBy: VideoOrderBy, selectIds: [ID!]!): [Video!]!
+    videos(name: String, orderBy: VideoOrderBy, selectIds: [ID!]): [Video!]!
   }
 
   enum StudioOrderBy {
@@ -56,7 +56,7 @@ const types = gql`
     allStudios(
       name: String
       orderBy: StudioOrderBy
-      selectIds: [ID!]!
+      selectIds: [ID!]
     ): [Studio!]!
     Studio(id: ID, name: String): Studio
   }
