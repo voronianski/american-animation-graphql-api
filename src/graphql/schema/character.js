@@ -32,7 +32,7 @@ const types = gql`
     """
     List of available on the web animated cartoons' videos that feature the character
     """
-    videos: [Video!]!
+    videos(name: String, orderBy: VideoOrderBy): [Video!]!
   }
 
   enum CharacterOrderBy {
