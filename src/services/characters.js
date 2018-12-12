@@ -84,7 +84,15 @@ function findByIds(idList, { name, orderBy }) {
   let _db = db
     .getInstance()
     .get('characters')
-    .filter(character => idList.includes(character.id));
+    .reduce((memo, character, index) => {
+      const originalIndex = idList.indexOf(character.id);
+
+      if (originalIndex > -1) {
+        memo[originalIndex] = character;
+      }
+
+      return memo;
+    }, []);
 
   if (name) {
     _db = _db.filter(character =>
@@ -96,14 +104,6 @@ function findByIds(idList, { name, orderBy }) {
     const sort = getSort(orderBy);
 
     _db = _db.orderBy(sort.key, sort.order);
-  } else {
-    _db = _db.reduce((memo, character, index) => {
-      const originalIndex = idList.indexOf(character.id);
-
-      memo.splice(originalIndex, 0, character);
-
-      return memo;
-    }, []);
   }
 
   return _db.value();

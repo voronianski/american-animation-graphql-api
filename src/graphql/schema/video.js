@@ -1,8 +1,10 @@
+const { URL } = require('url');
 const { gql } = require('apollo-server-express');
 
 const videos = require('../../services/videos');
 const studios = require('../../services/studios');
 const characters = require('../../services/characters');
+const omdb = require('../../services/omdb');
 
 const types = gql`
   type Video {
@@ -46,6 +48,12 @@ const types = gql`
     Link to IMDB article about the animated cartoon
     """
     imdbUrl: URL
+
+    """
+    Data about the animated cartoon found on Open Movie Database. It can be useful to get poster or plot of the cartoon.
+    We cannot guarantee what fields will be returned by OMDb API, so use it carefully (that's also why JSON type is used).
+    """
+    omdb: JSON!
   }
 
   enum VideoOrderBy {
@@ -97,6 +105,13 @@ const resolvers = {
 
     links({ links }) {
       return links || [];
+    },
+
+    omdb({ imdbUrl }) {
+      const urlObj = new URL(imdbUrl);
+      const imdbId = urlObj.pathname.split('/')[2];
+
+      return omdb.getByIdMemoized(imdbId);
     }
   }
 };

@@ -57,12 +57,15 @@
     "express": "^4.16.4",
     "fs-extra": "^7.0.1",
     "graphql": "^14.0.2",
+    "graphql-type-json": "^0.2.1",
     "klaw-sync": "^6.0.0",
     "lodash-id": "^0.14.0",
     "lowdb": "^1.0.0",
+    "memoizee": "^0.4.14",
     "merge-graphql-schemas": "^1.5.8",
     "morgan": "^1.9.1",
     "shortid": "^2.2.14",
+    "superagent": "^3.8.3",
     "yaml": "^1.0.3"
   },
   "devDependencies": {

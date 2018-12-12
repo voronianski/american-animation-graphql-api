@@ -80,7 +80,15 @@ function findByIds(idList, { name, orderBy }) {
   let _db = db
     .getInstance()
     .get('videos')
-    .filter(video => idList.includes(video.id));
+    .reduce((memo, video, index) => {
+      const originalIndex = idList.indexOf(video.id);
+
+      if (originalIndex > -1) {
+        memo[originalIndex] = video;
+      }
+
+      return memo;
+    }, []);
 
   if (name) {
     _db = _db.filter(video =>
@@ -92,14 +100,6 @@ function findByIds(idList, { name, orderBy }) {
     const sort = getSort(orderBy);
 
     _db = _db.orderBy(sort.key, sort.order);
-  } else {
-    _db = _db.reduce((memo, video, index) => {
-      const originalIndex = idList.indexOf(video.id);
-
-      memo.splice(originalIndex, 0, video);
-
-      return memo;
-    }, []);
   }
 
   return _db.value();
