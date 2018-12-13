@@ -51,7 +51,7 @@
   studios:
     - Warner Bros. Cartoons Inc.
   images:
-    - https://voronianski.github.io/american-animation-graphql-api/bugs-bunny.gif
+    - https://voronianski.github.io/american-animation-graphql-api/characters/bugs-bunny.gif
   id: 0KcKazo6WM
 - name: Porky Pig
   createdIn: 1938
@@ -83,7 +83,7 @@
   studios:
     - Terrytoons
   images:
-    - https://voronianski.github.io/american-animation-graphql-api/mighty-mouse.jpg
+    - https://voronianski.github.io/american-animation-graphql-api/characters/mighty-mouse.jpg
   id: f3WlQRGjn
 - name: Wile E. Coyote
   createdIn: 1949
