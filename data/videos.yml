@@ -201,3 +201,58 @@
   links:
     - https://www.dailymotion.com/video/x20z63h
   id: yz88NzM9ul
+- name: Baby Bottleneck
+  releasedIn: 1946
+  directedBy: Robert Clampett
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0038317
+  characters:
+    - Porky Pig
+    - Daffy Duck
+  links:
+    - https://www.dailymotion.com/video/x1yl525
+  id: KtAHVLUWs
+- name: Kitty Kornered
+  releasedIn: 1946
+  directedBy: Robert Clampett
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0038671
+  characters:
+    - Porky Pig
+    - Sylvester the Cat
+  links:
+    - https://vimeo.com/152834385
+    - https://www.dailymotion.com/video/x1z1ous
+  id: eVlg5oC3h0
+- name: Scaredy Cat
+  releasedIn: 1948
+  directedBy: Chuck Jones
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0040760
+  characters:
+    - Porky Pig
+    - Sylvester the Cat
+  links:
+    - https://www.dailymotion.com/video/x4y5f1l
+  id: hCDaCv5dS9
+- name: Porky Chops
+  releasedIn: 1949
+  directedBy: Arthur Davis
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0041760
+  characters:
+    - Porky Pig
+  links:
+    - https://www.dailymotion.com/video/x46xixv
+  id: v7pCaTtkIw
+- name: Old Glory
+  releasedIn: 1939
+  directedBy: Chuck Jones
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0031749
+  characters:
+    - Porky Pig
+  links:
+    - https://vimeo.com/305430837
+    - https://www.dailymotion.com/video/x6i6zqc
+  id: CAf92i9SzI
