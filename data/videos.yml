@@ -37,6 +37,7 @@
   imdbUrl: https://www.imdb.com/title/tt0031025
   characters:
     - Popeye the Sailor
+    - Olive Oyl
   links:
     - https://vimeo.com/153543605
   id: McU5l0LN5o
@@ -268,3 +269,14 @@
     - https://www.dailymotion.com/video/x2zqjbm
     - https://vimeo.com/1626886
   id: hFL-2QDZo
+- name: Popeye the Sailor Meets Sindbad the Sailor
+  releasedIn: 1936
+  directedBy: Dave Fleischer
+  studio: Fleischer Studios
+  imdbUrl: https://www.imdb.com/title/tt0028119
+  characters:
+    - Popeye the Sailor
+    - Olive Oyl
+  links:
+    - https://www.dailymotion.com/video/x5uz0i5
+  id: y_OflTbOKY
