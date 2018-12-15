@@ -45,6 +45,12 @@ const types = gql`
     links: [URL!]!
 
     """
+    Link to poster image of the video found on the web and stored in project's repository under GitHub Pages CDN.
+    Be careful as images have different sizes.
+    """
+    poster: URL
+
+    """
     Link to IMDB article about the animated cartoon
     """
     imdbUrl: URL

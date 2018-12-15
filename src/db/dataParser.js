@@ -117,6 +117,13 @@ function linkCollections(data = {}) {
   return data;
 }
 
+function parse() {
+  const dataFiles = findDataFiles(dataDir);
+  const parsedData = parseDataFiles(dataFiles);
+
+  return parsedData;
+}
+
 function read() {
   const dataFiles = findDataFiles(dataDir);
   const parsedData = parseDataFiles(dataFiles);
@@ -138,4 +145,4 @@ function prepare() {
   return dataWithIds;
 }
 
-module.exports = { read, prepare };
+module.exports = { read, prepare, parse };

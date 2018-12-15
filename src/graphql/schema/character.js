@@ -24,7 +24,7 @@ const types = gql`
     studios(name: String, orderBy: StudioOrderBy, selectIds: [ID!]): [Studio!]!
 
     """
-    List of links to some images of the character found on the web and stored under GitHub pages CDN.
+    List of links to some images of the character found on the web and stored in project's repository under GitHub Pages CDN.
     Be careful as images have different sizes.
     """
     images: [URL!]!
