@@ -4,7 +4,6 @@ const config = require('c0nfig');
 
 function getById(imdbId) {
   return new Promise((resolve, reject) => {
-    console.log('MAKING REQ', imdbId);
     request
       .get(config.omdb.apiUrl)
       .query({
