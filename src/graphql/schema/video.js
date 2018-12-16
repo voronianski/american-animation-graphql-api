@@ -45,10 +45,10 @@ const types = gql`
     links: [URL!]!
 
     """
-    Link to poster image of the video found on the web and stored in project's repository under GitHub Pages CDN.
+    Link to image of the video (usually a poster) found on the web and stored in project's repository under GitHub Pages CDN.
     Be careful as images have different sizes.
     """
-    poster: URL
+    image: URL
 
     """
     Link to IMDB article about the animated cartoon
@@ -56,8 +56,8 @@ const types = gql`
     imdbUrl: URL
 
     """
-    Data about the animated cartoon found on Open Movie Database. It can be useful to get poster or plot of the cartoon.
-    We cannot guarantee what fields will be returned by OMDb API, so use it carefully (that's also why JSON type is used).
+    JSON data about the animated cartoon found on Open Movie Database. It can be useful to get poster or plot of the cartoon.
+    We cannot guarantee what fields will be returned by OMDb API, so use it carefully.
     """
     omdb: JSON!
   }
