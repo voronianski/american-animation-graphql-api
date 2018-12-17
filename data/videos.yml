@@ -329,3 +329,64 @@
     - https://www.dailymotion.com/video/x2dfgl8
   id: DTweoxdN2
   image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/moth-and-the-flame.jpg
+- name: A Tale of Two Kitties
+  releasedIn: 1942
+  directedBy: Robert Clampett
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0035414
+  characters:
+    - Tweety Bird
+  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/a-tale-of-two-kitties.jpg
+  links:
+    - https://www.dailymotion.com/video/x6tj0kh
+  id: VlBupmYdEz
+- name: Tweetie Pie
+  releasedIn: 1947
+  directedBy: Friz Freleng
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0039923
+  characters:
+    - Tweety Bird
+    - Sylvester the Cat
+  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/tweetie-pie.jpg
+  links:
+    - https://www.dailymotion.com/video/x1z1prc
+  id: CedsXl0r7h
+- name: Fast and Furry-ous
+  releasedIn: 1949
+  directedBy: Chuck Jones
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0041349
+  characters:
+    - Wile E. Coyote
+    - Road Runner
+  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/fast-and-furry-ous.jpg
+  links:
+    - https://vimeo.com/232117612
+    - https://www.dailymotion.com/video/x63plez
+  id: QRgdi7r5S-
+- name: Beep, Beep
+  releasedIn: 1952
+  directedBy: Chuck Jones
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0044404
+  characters:
+    - Wile E. Coyote
+    - Road Runner
+  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/beep-beep.jpg
+  links:
+    - https://www.dailymotion.com/video/x637x7j
+  id: XBMmln-aPD
+- name: Lovelorn Leghorn
+  releasedIn: 1951
+  directedBy: Robert McKimson
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0043760
+  characters:
+    - Foghorn Leghorn
+    - Barnyard Dawg
+    - Miss Prissy
+  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/lovelorn-leghorn.jpg
+  links:
+    - https://www.dailymotion.com/video/x6dxcm7
+  id: 4wlXXX0EBs

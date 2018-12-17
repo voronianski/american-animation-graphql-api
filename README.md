@@ -14,9 +14,10 @@
 
 ## Data sources
 
-The main resources that were used to make this API work:
+Some of the resources that were used to make this API work:
 
 - [Big Cartoon Database](https://www.bcdb.com)
+- [The Internet Animation Database](http://www.intanibase.com)
 - ["Golden Age of American Animation" on Wiki](https://en.wikipedia.org/wiki/Golden_age_of_American_animation)
 - [List of animation studios on Wiki](https://en.wikipedia.org/wiki/List_of_animation_studios)
 - ["The 50 Greatest Cartoons: As Selected by 1,000 Animation Professionals" (1994 book by Jerry Beck) on Wiki](https://en.wikipedia.org/wiki/The_50_Greatest_Cartoons)
