@@ -26,11 +26,11 @@ Some of the resources that were used to make this API work:
 
 ### Contributing
 
-If you see some discrepancies in data or you want to extend it, please edit `.yml` files in [data folder](https://github.com/voronianski/american-animation-graphql-api/tree/master/data) and make pull requests.
+If you see some discrepancies in data or you want to extend it, please edit necessary `.yml` files in [data folder](https://github.com/voronianski/american-animation-graphql-api/tree/master/data) and make pull request.
 
 ### What's missing?
 
-For now only cartoon characters, studios that produced them and some videos are present. In longer term it would be also great to include animators that worked on the characters as well as distributors. If you've made some research and have some valid data, please consider [contributing](https://github.com/voronianski/american-animation-graphql-api#contributing).
+For now only characters, studios that produced them and some cartoon shorts info is present. In longer term it would be also great to include more data on animators that worked on the characters as well as distributors. If you've made some research and have some valid data, please consider [contributing](https://github.com/voronianski/american-animation-graphql-api#contributing).
 
 ## Development
 
