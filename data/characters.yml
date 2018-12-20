@@ -210,3 +210,8 @@
   studios:
     - Famous Studios
   id: GQLdf6vZq
+- name: Barney Bear
+  createdIn: 1939
+  studios:
+    - Metro-Goldwyn-Mayer Cartoon Studio
+  id: 2BAZN0cGN
