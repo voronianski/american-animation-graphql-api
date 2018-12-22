@@ -410,3 +410,33 @@
   links:
     - https://www.dailymotion.com/video/x62rbxp
   id: T_hBhrWQi6
+- name: The Old Mill
+  releasedIn: 1937
+  directedBy: Wilfred Jackson
+  studio: Walt Disney Productions
+  imdbUrl: https://www.imdb.com/title/tt0029339
+  links:
+    - https://www.dailymotion.com/video/x26j9ty
+  id: xiBRipi1v_
+- name: One Froggy Evening
+  releasedIn: 1955
+  directedBy: Chuck Jones
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0048449
+  characters:
+    - Michigan J. Frog
+  links:
+    - https://vimeo.com/295025672
+    - https://www.dailymotion.com/video/x3bvb6s
+  id: hnhWId6KGN
+- name: Duck Dodgers in the 24½th Century
+  releasedIn: 1953
+  directedBy: Chuck Jones
+  studio: Warner Bros. Cartoons Inc.
+  imdbUrl: https://www.imdb.com/title/tt0045709
+  characters:
+    - Daffy Duck
+    - Porky Pig
+  links:
+    - https://www.dailymotion.com/video/x1ym9b7
+  id: C8nPCaox_P
