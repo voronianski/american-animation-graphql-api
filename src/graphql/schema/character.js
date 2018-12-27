@@ -24,12 +24,6 @@ const types = gql`
     studios(name: String, orderBy: StudioOrderBy, selectIds: [ID!]): [Studio!]!
 
     """
-    List of links to some images of the character found on the web and stored in project's repository under GitHub Pages CDN.
-    Be careful as images have different sizes.
-    """
-    images: [URL!]!
-
-    """
     List of available on the web animated cartoons' videos that feature the character
     """
     videos(name: String, orderBy: VideoOrderBy, selectIds: [ID!]): [Video!]!
@@ -80,10 +74,6 @@ const resolvers = {
   Character: {
     studios({ id }, { name, orderBy }) {
       return studios.findByCharacterId(id, { name, orderBy });
-    },
-
-    images({ images }) {
-      return images || [];
     },
 
     videos({ id }, { name, orderBy }) {

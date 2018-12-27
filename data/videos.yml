@@ -9,7 +9,6 @@
   links:
     - https://vimeo.com/218263252
   id: 9OxQsvoFyG
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/whats-opera-doc.jpg
 - name: Rabbit of Seville
   releasedIn: 1950
   directedBy: Chuck Jones
@@ -21,7 +20,6 @@
   links:
     - https://vimeo.com/182263712
   id: YcbwIeKl0z
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/rabbit-of-seville.jpg
 - name: Der Fuehrer's Face
   releasedIn: 1943
   directedBy: Jack Kinney
@@ -32,7 +30,6 @@
   links:
     - https://vimeo.com/104018771
   id: aWPiHWFm5G
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/der-fuehrers-face.jpg
 - name: Aladdin and His Wonderful Lamp
   releasedIn: 1939
   directedBy: Dave Fleischer
@@ -44,7 +41,6 @@
   links:
     - https://vimeo.com/153543605
   id: McU5l0LN5o
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/aladdin-and-his-wonderful-lamp.jpg
 - name: Red Hot Riding Hood
   releasedIn: 1943
   directedBy: Tex Avery
@@ -56,7 +52,6 @@
   links:
     - https://vimeo.com/218354742
   id: KV6Qq8B3cX
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/red-hot-riding-hood.jpg
 - name: King-Size Canary
   releasedIn: 1947
   directedBy: Tex Avery
@@ -65,7 +60,6 @@
   links:
     - https://vimeo.com/236173567
   id: EQdgAoAEl
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/king-size-canary.jpg
 - name: Swing Shift Cinderella
   releasedIn: 1945
   directedBy: Tex Avery
@@ -77,7 +71,6 @@
   links:
     - https://vimeo.com/223534945
   id: S3Zwct0aH
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/swing-shift-cinderella.jpg
 - name: The Great Piggy Bank Robbery
   releasedIn: 1946
   directedBy: Robert Clampett
@@ -88,7 +81,6 @@
   links:
     - https://www.dailymotion.com/video/x5z3uw4
   id: BhNiP9I5zs
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/the-great-piggy-bank-robbery.jpg
 - name: Little Rural Riding Hood
   releasedIn: 1949
   directedBy: Tex Avery
@@ -100,7 +92,6 @@
   links:
     - https://vimeo.com/252796291
   id: EH26BGFx7
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/little-rural-riding-hood.jpg
 - name: Who Killed Who?
   releasedIn: 1943
   directedBy: Tex Avery
@@ -109,7 +100,6 @@
   links:
     - https://vimeo.com/218295305
   id: vmfDWUFvo1
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/who-killed-who.jpg
 - name: A Pest in the House
   releasedIn: 1947
   directedBy: Chuck Jones
@@ -121,7 +111,6 @@
   links:
     - https://vimeo.com/294970327
   id: KsurrwTNz
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/a-pest-in-the-house.jpg
 - name: The Shooting of Dan McGoo
   releasedIn: 1945
   directedBy: Tex Avery
@@ -134,7 +123,6 @@
   links:
     - https://www.dailymotion.com/video/x4833qx
   id: zxGrQjdmwJ
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/the-shooting-of-dan-mcgoo.jpg
 - name: The Scarlet Pumpernickel
   releasedIn: 1950
   directedBy: Chuck Jones
@@ -148,7 +136,6 @@
   links:
     - https://www.dailymotion.com/video/x1z2112
   id: hub4tFxaW-
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/the-scarlet-pumpernickel.jpg
 - name: Wild and Woolfy
   releasedIn: 1945
   directedBy: Tex Avery
@@ -162,7 +149,6 @@
     - https://vimeo.com/223538318
     - https://www.dailymotion.com/video/x495g6u
   id: gE6q1AUIO
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/wild-and-woolfy.jpg
 - name: Uncle Tom's Cabaña
   releasedIn: 1947
   directedBy: Tex Avery
@@ -174,7 +160,6 @@
     - https://vimeo.com/230280881
     - https://www.dailymotion.com/video/x495ouv
   id: cwEcHEt6O_
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/uncle-toms-cabana.jpg
 - name: Duck Amuck
   releasedIn: 1953
   directedBy: Chuck Jones
@@ -186,7 +171,6 @@
   links:
     - https://www.dailymotion.com/video/x6hdzgs
   id: yiOzqsYwkI
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/duck-amuck.jpg
 - name: The Hick Chick
   releasedIn: 1946
   directedBy: Tex Avery
@@ -197,7 +181,6 @@
   links:
     - https://vimeo.com/229195712
   id: NXp0EaraK
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/the-hick-chick.jpg
 - name: Robin Hood Daffy
   releasedIn: 1958
   directedBy: Chuck Jones
@@ -209,7 +192,6 @@
   links:
     - https://www.dailymotion.com/video/x3w27lh
   id: 24C46QMnNJ
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/robin-hood-daffy.jpg
 - name: Rabbit Hood
   releasedIn: 1949
   directedBy: Chuck Jones
@@ -220,7 +202,6 @@
   links:
     - https://www.dailymotion.com/video/x20z63h
   id: yz88NzM9ul
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/rabbit-hood.jpg
 - name: Baby Bottleneck
   releasedIn: 1946
   directedBy: Robert Clampett
@@ -232,7 +213,6 @@
   links:
     - https://www.dailymotion.com/video/x1yl525
   id: KtAHVLUWs
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/baby-bottleneck.jpg
 - name: Kitty Kornered
   releasedIn: 1946
   directedBy: Robert Clampett
@@ -245,7 +225,6 @@
     - https://vimeo.com/152834385
     - https://www.dailymotion.com/video/x1z1ous
   id: eVlg5oC3h0
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/kitty-kornered.jpg
 - name: Scaredy Cat
   releasedIn: 1948
   directedBy: Chuck Jones
@@ -257,7 +236,6 @@
   links:
     - https://www.dailymotion.com/video/x4y5f1l
   id: hCDaCv5dS9
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/scaredy-cat.jpg
 - name: Porky Chops
   releasedIn: 1949
   directedBy: Arthur Davis
@@ -268,7 +246,6 @@
   links:
     - https://www.dailymotion.com/video/x46xixv
   id: v7pCaTtkIw
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/porky-chops.jpg
 - name: Old Glory
   releasedIn: 1939
   directedBy: Chuck Jones
@@ -280,7 +257,6 @@
     - https://vimeo.com/305430837
     - https://www.dailymotion.com/video/x6i6zqc
   id: CAf92i9SzI
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/old-glory.jpg
 - name: The Band Concert
   releasedIn: 1935
   directedBy: Wilfred Jackson
@@ -293,7 +269,6 @@
     - https://www.dailymotion.com/video/x2zqjbm
     - https://vimeo.com/1626886
   id: hFL-2QDZo
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/the-band-concert.jpg
 - name: Popeye the Sailor Meets Sindbad the Sailor
   releasedIn: 1936
   directedBy: Dave Fleischer
@@ -307,7 +282,6 @@
   links:
     - https://www.dailymotion.com/video/x5uz0i5
   id: y_OflTbOKY
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/popeye-the-sailor-meets-sindbad-the-sailor.jpg
 - name: One Ham's Family
   releasedIn: 1943
   directedBy: Tex Avery
@@ -319,7 +293,6 @@
     - https://www.dailymotion.com/video/x48319r
     - https://vimeo.com/223489060
   id: XUwTTqxgO
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/one-hams-family.jpg
 - name: Moth and the Flame
   releasedIn: 1938
   directedBy: Burt Gillett
@@ -328,7 +301,6 @@
   links:
     - https://www.dailymotion.com/video/x2dfgl8
   id: DTweoxdN2
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/moth-and-the-flame.jpg
 - name: A Tale of Two Kitties
   releasedIn: 1942
   directedBy: Robert Clampett
@@ -336,7 +308,6 @@
   imdbUrl: https://www.imdb.com/title/tt0035414
   characters:
     - Tweety Bird
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/a-tale-of-two-kitties.jpg
   links:
     - https://www.dailymotion.com/video/x6tj0kh
   id: VlBupmYdEz
@@ -348,7 +319,6 @@
   characters:
     - Tweety Bird
     - Sylvester the Cat
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/tweetie-pie.jpg
   links:
     - https://www.dailymotion.com/video/x1z1prc
   id: CedsXl0r7h
@@ -360,7 +330,6 @@
   characters:
     - Wile E. Coyote
     - Road Runner
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/fast-and-furry-ous.jpg
   links:
     - https://vimeo.com/232117612
     - https://www.dailymotion.com/video/x63plez
@@ -373,7 +342,6 @@
   characters:
     - Wile E. Coyote
     - Road Runner
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/beep-beep.jpg
   links:
     - https://www.dailymotion.com/video/x637x7j
   id: XBMmln-aPD
@@ -386,7 +354,6 @@
     - Foghorn Leghorn
     - Barnyard Dawg
     - Miss Prissy
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/lovelorn-leghorn.jpg
   links:
     - https://www.dailymotion.com/video/x6dxcm7
   id: 4wlXXX0EBs
@@ -428,7 +395,6 @@
   links:
     - https://vimeo.com/295025672
     - https://www.dailymotion.com/video/x3bvb6s
-  image: https://voronianski.github.io/american-animation-graphql-api/images/cartoons/one-froggy-evening.jpg
   id: hnhWId6KGN
 - name: Duck Dodgers in the 24½th Century
   releasedIn: 1953
